@@ -16,7 +16,7 @@ public class MartService {
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
     public boolean isMartHolyDay(){
-        int[] holyDayWeeks = {2,4};
+        Integer[] holyDayWeeks = {2,4};
 
         if(Arrays.asList(holyDayWeeks).contains(getWeekOfMonth())){
             logger.info("휴일 입니다.");
